@@ -1,0 +1,5 @@
+{
+    "css": {
+        "style": ["node_modules/bootstrap/scss/bootstrap.scss"]
+    }
+}
