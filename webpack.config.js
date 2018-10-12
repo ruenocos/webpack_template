@@ -24,13 +24,27 @@ module.exports = {
             {
                 test: /\.mustache$/,
                 loader: "mustache-loader"
+            },
+            {
+                test: /\.(svg|png|eot|woff|woff2|ttf)$/,
+                loader: "file-loader",
+                options: {
+                    name: 'assets/[name].[ext]',
+                    context: ''
+                }
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./mustache/main.mustache",
-            inject: false
+            inject: false,
+            filename: "index.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./mustache/login.mustache",
+            inject: false,
+            filename: "login.html"
         })
     ]
 };
