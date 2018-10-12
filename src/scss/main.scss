@@ -1,4 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 15px !important;
+}
+
 nav {
-    margin: 15px;
-    border-radius: 4px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.row {
+  width: 100%;
+  border-bottom: 2px solid #777;
+  margin: 0px !important;
 }
