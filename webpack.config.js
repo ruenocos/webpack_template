@@ -40,11 +40,6 @@ module.exports = {
             template: "./mustache/main.mustache",
             inject: false,
             filename: "index.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./mustache/login.mustache",
-            inject: false,
-            filename: "login.html"
         })
     ]
 };
